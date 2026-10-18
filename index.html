@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ひとふで相撲 — サポート</title>
+<meta name="description" content="一筆の落書きが紙相撲の力士になる、iOS アプリ「ひとふで相撲」のサポートページ。">
+<style>
+  /* 色はアプリと同じ（lib/ui/ink.dart）：和紙の地・墨の文字・朱。外部の読み込みは無い */
+  :root{--washi:#F6EFDF;--deep:#EDE1C8;--card:#FFFBF2;--sumi:#2A1C14;--soft:#5A463A;--shu:#C2341F;--shuDeep:#8E2416;--ai:#1D5C88}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--washi);color:var(--sumi);
+       font-family:"Hiragino Sans","ヒラギノ角ゴシック","Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif;
+       line-height:1.9;-webkit-text-size-adjust:100%;min-height:100vh}
+  .wrap{max-width:34rem;margin:0 auto;padding:2.25rem 1.25rem 4rem}
+  header{text-align:center;margin-bottom:1.75rem}
+  h1{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:2rem;margin:.25rem 0;letter-spacing:.12em}
+  .hanko{display:inline-block;background:var(--shu);color:#fff;font-weight:700;font-size:.8rem;line-height:1.15;
+         padding:.2rem .3rem;border-radius:.3rem;writing-mode:vertical-rl;transform:rotate(4deg);vertical-align:.6rem;margin-left:.3rem}
+  .lead{color:var(--soft);font-size:.95rem;margin:0;font-weight:700}
+  h2{font-size:1.05rem;margin:2.2rem 0 .5rem;padding-bottom:.3rem;border-bottom:2px solid var(--sumi)}
+  p,li{font-size:.95rem}
+  ul{padding-left:1.2rem}
+  .card{background:var(--card);border:2.5px solid var(--sumi);border-radius:1rem;padding:.9rem 1.1rem;margin:1rem 0;box-shadow:0 4px 0 var(--sumi)}
+  .q{font-weight:700;margin:0 0 .3rem;font-size:.97rem}
+  .a{margin:0;color:var(--soft)}
+  a{color:var(--ai)}
+  a.button{display:block;text-align:center;text-decoration:none;font-weight:700;background:var(--shu);color:#fff;
+           border:2.5px solid var(--sumi);border-radius:1rem;padding:.8rem 1rem;margin:1.25rem 0;box-shadow:0 4px 0 var(--sumi)}
+  footer{margin-top:3rem;text-align:center;color:var(--soft);font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>ひとふで相撲<span class="hanko">一筆</span></h1>
+  <p class="lead">一筆の落書きが、力士になる。</p>
+</header>
+
+<p>
+  指を離すまでの一筆で、力士を描きます。描いた形がそのまま紙相撲の力士になり、土俵の上でぶつかり合います。
+  ゲージが満ちたら「押す」、相手が前のめりになったら「引く」。うっちゃり、はたき込み、押し出し……決まり手は 16 種。
+  1番勝負・6日間の本場所・1台を2人で遊ぶ対戦・全国番付があります。
+</p>
+
+<!-- ストアに並んだら、下の STORE-LINK のコメント記号を外して id を入れる。並ぶ前に外すと 404 を配ることになる。
+<a class="button" href="https://apps.apple.com/jp/app/idXXXXXXXXXX?pt=129314143&amp;ct=site&amp;mt=8">App Store で見る</a>
+STORE-LINK -->
+
+<h2>よくある質問</h2>
+
+<div class="card">
+  <p class="q">力士が立てません。</p>
+  <p class="a">足が狭すぎるか、重心が高すぎる形です。描く画面の「反転」を押すと立てる形も多いです。足を広げるか、重心を低くして描き直してみてください。</p>
+</div>
+
+<div class="card">
+  <p class="q">「広告を消す」を買ったのに、別の端末や入れ直したあとで広告が出ます。</p>
+  <p class="a">ホーム右上の歯車 → 設定 →「購入を復元」を押してください。同じ Apple アカウントで買った「広告を消す」が戻ります。</p>
+</div>
+
+<div class="card">
+  <p class="q">全国番付の相手は人ですか。</p>
+  <p class="a">全国番付の相手は、ほかのプレイヤーが描いて登録した力士と、運営が用意した力士（Bot）です。相手の力士は、取組の中では AI が叩きます。マッチングによっては Bot と戦うことがあり、Bot も番付に載ります。</p>
+</div>
+
+<div class="card">
+  <p class="q">不適切な力士を見つけました。</p>
+  <p class="a">全国番付の番付表で、その力士を押して「通報」してください。通報が集まった力士は自動で非表示になり、運営が確認します。「表示しない」を選ぶと、あなたの番付と相手探しから外れます。</p>
+</div>
+
+<div class="card">
+  <p class="q">自分の力士を全国番付から消したい。</p>
+  <p class="a">下の連絡先まで四股名をお知らせください。削除します。描き直して登録し直すと、前の力士は差し替わります。</p>
+</div>
+
+<h2>お問い合わせ</h2>
+<p>
+  不具合・ご意見・削除のご依頼は、こちらまでお願いします。<br>
+  <a href="mailto:support.kumaogoto@gmail.com?subject=%E3%81%B2%E3%81%A8%E3%81%B5%E3%81%A7%E7%9B%B8%E6%92%B2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">support.kumaogoto@gmail.com</a>
+</p>
+<p>お使いの iPhone の機種と iOS のバージョンを書き添えていただけると助かります。</p>
+
+<h2>プライバシーポリシー</h2>
+<p><a href="privacy.html">「ひとふで相撲」プライバシーポリシー</a></p>
+
+<footer>© 2026 Mitsuaki Goto</footer>
+</div>
+</body>
+</html>
