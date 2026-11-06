@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>プライバシーポリシー — ひとふで相撲</title>
-<meta name="description" content="iOS アプリ「ひとふで相撲」のプライバシーポリシー。">
+<meta name="description" content="「ひとふで相撲」（iOS アプリとブラウザ版）のプライバシーポリシー。">
 <style>
   /* 色はアプリと同じ（lib/ui/ink.dart）：和紙の地・墨の文字・朱。外部の読み込みは無い */
   :root{--washi:#F6EFDF;--card:#FFFBF2;--sumi:#2A1C14;--soft:#5A463A;--shu:#C2341F;--ai:#1D5C88}
@@ -28,8 +28,8 @@
 <div class="wrap">
 <nav><a href="./">← ひとふで相撲 サポート</a></nav>
 <h1>「ひとふで相撲」プライバシーポリシー</h1>
-<p class="meta">制定日: 2026年10月18日<br>改定日: 2026年10月31日<br>開発者: Mitsuaki Goto</p>
-<p>iOS アプリ「ひとふで相撲」（以下「本アプリ」）における利用者の情報の取り扱いを、以下のとおり定めます。</p>
+<p class="meta">制定日: 2026年10月18日<br>改定日: 2026年11月6日<br>開発者: Mitsuaki Goto</p>
+<p>iOS アプリ「ひとふで相撲」とそのブラウザ版（以下「本アプリ」）における利用者の情報の取り扱いを、以下のとおり定めます。ブラウザ版だけのことは第 9 項に書いています。</p>
 <h2>基本的な考え方</h2>
 <p>本アプリにアカウント登録はなく、氏名やメールアドレスなどの個人情報を入力する場面もありません。力士を描く・1番勝負・本場所・2人対戦・図鑑・取組の動画づくりは、端末の中だけで動き、通信を使いません。本アプリが外部と通信するのは、次の 3 つの場合だけです。</p>
 <ol>
@@ -87,6 +87,16 @@
 <h2>8. お問い合わせ</h2>
 <p>本ポリシーに関するお問い合わせは、次の連絡先までお願いします。</p>
 <p><a href="mailto:support.kumaogoto@gmail.com">support.kumaogoto@gmail.com</a></p>
+<h2>9. ブラウザ版について</h2>
+<p>ブラウザ版（<a href="https://hitofudesumo.kumao.app/">https://hitofudesumo.kumao.app/</a>）には、次のことが当てはまります。</p>
+<ul>
+<li><strong>広告と課金はありません。</strong>AdMob を使わず、トラッキングの確認も出ません（第 1 項・第 2 項は当てはまりません）</li>
+<li><strong>保存はブラウザの中です。</strong>第 4 項の情報はブラウザの中（localStorage）にだけ保存します。次から通信なしでも遊べるように、ゲームのファイルもブラウザの中に置きます（Service Worker）。ブラウザのデータを消すと消え、元に戻せません</li>
+<li><strong>全国番付は iOS 版と同じ番付です。</strong>送る情報は第 3 項と同じです。ほかに、ブラウザ版で登録した力士・ブラウザ版の取組と通報であることの印をサーバーに残します（iOS 版と番付を分ける・結果を照らし合わせる・不適切な通報を防ぐため）。他の利用者には見えません</li>
+<li><strong>配信は GitHub Pages（GitHub, Inc.）です。</strong>ページを開いたときのアクセスの記録（IP アドレスなど）は GitHub が扱います。<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub のプライバシーポリシー</a></li>
+<li><strong>足りない字は Google から読みます。</strong>ゲームに入っていない字（ほかの人の四股名の、めずらしい漢字や絵文字など）が画面に出るときだけ、Google のフォント配信からその字を読みます。このとき IP アドレスなどが Google に届きます</li>
+<li><strong>振動と共有のために送るものはありません。</strong>振動は端末の機能です（Android の Chrome など）。共有は端末の共有の窓か X の投稿の画面を開くだけで、開発者には何も届きません（共有の窓で画像を渡せないブラウザでは、番付カードの画像をファイルとして保存します）</li>
+</ul>
 
 <footer>© 2026 Mitsuaki Goto</footer>
 </div>
